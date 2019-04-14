@@ -11,4 +11,11 @@ writeDump(getClassPath());
 </cfscript>
 <cfabort/> --->
 
+<cfset configuration = { 
+    environment = "SANDBOX",
+    merchantId = "<your-merchand-Id>",
+    privateKey = "<your-private-key>",
+    publicKey = "<your-public-key>"
+}>
+
 <cfset braintreeGateway = createobject( "component", "com.BraintreeGateway").init( argumentCollection=configuration )>
