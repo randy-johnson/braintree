@@ -6,4 +6,9 @@
 
 </cfscript>
 
-<cfset braintreeGateway = createobject( "component", "braintreecfml.com.BraintreeGateway").init( argumentCollection=configuration )>
+<!--- <cfscript>
+writeDump(getClassPath());
+</cfscript>
+<cfabort/> --->
+
+<cfset braintreeGateway = createobject( "component", "com.BraintreeGateway").init( argumentCollection=configuration )>
